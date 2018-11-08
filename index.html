@@ -26,7 +26,7 @@
 	<body>
 		<header>
 			<nav>
-				<ul class="nav justify-content-center">
+				<ul class="navbar fixed-top justify-content-center">
 		  			<li class="nav-item">
 						<a class="nav-link active" href="#me">moi</a>
 		  			</li>
@@ -52,73 +52,79 @@
 				</ul>
 			</nav>
 		</header>
-		<div id="me" class="container"> <!-- 3 divs: les deux première alignées, la dernière en colonne avec les deux autres -->
+		<div id="me" class="container-fluid"> <!-- 3 divs: les deux première alignées, la dernière en colonne avec les deux autres -->
 			<div class="docolumn_1">
 				<div id="profil_img">
-					<img src="/media/images/01_moi/0.jpg" class="rounded" alt="Photo de profil" title="Photo de moi">
+					<img src="media/images/01_moi/0.jpg" class="rounded" alt="Photo de profil" title="Photo de moi">
 				</div>
 				<div id="me_about">
 					<h1>Mathieu Neveu</h1>
 					<h2>Développeur Informatique en Alternance</h2>
-					<p>En formation 'Développeur Informatique' au CESI de Rouen, à la recherche d'un contrat de professionnalisation.</p>
+					<p>étudiant à CESI Rouen, formation 'Développeur informatique'.</p>
 				</div>
 			</div>
-			<div class="docolumn_2">
-				<div id="foot_about">
-					<a href="media/pdf/certificat_mathieu-neveu_apprenez-a-creer-votre-site-web-avec-html5-et-css3.pdf">
-						<span class="fas fa-graduation-cap"></span>
-					</a>
-					<a href="/media/pdf/certificat_mathieu-neveu_le-machine-learning-est-il-l-avenir-de-l-homme.pdf">
-						<span class="fas fa-graduation-cap"></span>
-					</a>
-				</div>
+			<div class="certifs">
+				<a href="media/pdf/certificat_mathieu-neveu_apprenez-a-creer-votre-site-web-avec-html5-et-css3.pdf">
+					<span class="fas fa-graduation-cap"></span>
+				</a>
+				<a href="media/pdf/certificat_mathieu-neveu_le-machine-learning-est-il-l-avenir-de-l-homme.pdf">
+					<span class="fas fa-graduation-cap"></span>
+				</a>
+			</div>
+			<div class="reseaux">
+				<a href="https://www.linkedin.com/in/mathieu-neveu/">
+					<i class="fab fa-linkedin-in"></i>
+				</a>
+				<a href="https://github.com/MaatheN">
+					<i class="fab fa-github"></i>
+				</a>
 			</div>
 		</div>
-		<div id="skills" class="container">
+		<div id="skills" class="container-fluid">
 			<div class="row"> <!-- 148 * 160 -->
 				<div>
 					<h3>Langages</h3>
-					<div class="col-md-2">
-						<img src="\media\images\02_camemberts\c_actuelles_petit.png">
+					<div class="col-md-3">
+						<img src="media\images\02_camemberts\c_actuelles_petit.png">
 					</div>
 					<div class="col-md-3">
-						<img src="\media\images\02_camemberts\c_objeectif_petit.png">
+						<img src="media\images\02_camemberts\c_objeectif_petit.png">
 					</div>
 				</div>
 				<div>
 					<h3>IDE</h3>
 					<div class="col-md-3">
-						<img src="\media\images\02_camemberts\c_actuelles_petit.png">
+						<img src="media\images\02_camemberts\c_actuelles_petit.png">
 					</div>
 					<div class="col-md-3">
-						<img src="\media\images\02_camemberts\c_objeectif_petit.png">
+						<img src="media\images\02_camemberts\c_objeectif_petit.png">
 					</div>
 				</div>
 				<div>
 					<h3>Outils de travail</h3>
 					<div class="col-md-3">
-						<img src="\media\images\02_camemberts\c_actuelles_petit.png">
+						<img src="media\images\02_camemberts\c_actuelles_petit.png">
 					</div>
 					<div class="col-md-3">
-						<img src="\media\images\02_camemberts\c_objeectif_petit.png">
+						<img src="media\images\02_camemberts\c_objeectif_petit.png">
 					</div>
 				</div>
 				<div>
 					<h3>OS</h3>
 					<div class="col-md-3">
-						<img src="\media\images\02_camemberts\c_actuelles_petit.png">
+						<img src="media\images\02_camemberts\c_actuelles_petit.png">
 					</div>
 					<div class="col-md-3">
-						<img src="\media\images\02_camemberts\c_objeectif_petit.png">
+						<img src="media\images\02_camemberts\c_objeectif_petit.png">
 					</div>
 				</div>
 				<div>
 					<h3>Sécurité Info</h3>
 					<div class="col-md-3">
-						<img src="\media\images\02_camemberts\c_actuelles_petit.png">
+						<img src="media\images\02_camemberts\c_actuelles_petit.png">
 					</div>
 					<div class="col-md-3">
-						<img src="\media\images\02_camemberts\c_objeectif_petit.png">
+						<img src="media\images\02_camemberts\c_objeectif_petit.png">
 					</div>
 				</div>
 			</div>
@@ -212,7 +218,7 @@
 		</div>
 
 
-		<div id="portfolio" class="container">
+		<div id="portfolio" class="container-fluid">
 			<section id="slate-portfolio"> <!-- ardoises -->
 				<ul>
 					<li>
@@ -228,7 +234,7 @@
 					</li>
 					<li>
 						<div id="projet2" class="images">
-							<img src="###">
+							<img src="media/images/04_projets/fclogo.png">
 						</div> <!-- Besoin d'une seule image-->
 						<div class="description">
 							<h3>Site Formule Crêpes</h3>
@@ -251,7 +257,7 @@
 				</ul>
 			</section>
 		</div>
-		<div id="reading" class="container">
+		<div id="reading" class="container-fluid">
 			<div id="carouselReadingIndicators" class="carousel slide" data-ride="carousel">
 				<ol class="carousel-indicators">
 					<li data-target="#carouselReadingIndicators" data-slide-to="0" class="active"></li>
@@ -302,7 +308,7 @@
 				</a>
 			</div>
 			<div id="slide_0">	
-				<img src="/media/images/04_lectures/EMythLemythedelentrepreneurrevisite.jpg">
+				<img src="media/images/06_lectures/EMythLemythedelentrepreneurrevisite.jpg">
 				<p>Mythe de l'entrepreneur, n. : 1. Mythe selon lequel la plupart des personnes qui créent une petite entreprise sont des entrepreneurs. 2. Présupposé néfaste selon lequel une personne maîtrisant bien le travail technique d'une entreprise est capable de diriger une entreprise réalisant ce travail technique.
 					Qu'est-ce qui fait le succès d'une entreprise, qu'est-ce qui la voue à l'échec ? Classique parmi les classiques, cet ouvrage au succès international phénoménal déboulonne les mythes qui entourent la création d'entreprise et vous donne des solutions concrètes pour assurer le succès de la vôtre. Vous apprendrez notamment à :
 			déjouer la fatalité de l'échec grâce à une répartition rigoureuse des fonctions clés ;
@@ -314,32 +320,36 @@
 			</p>
 			</div>
 			<div id="slide_1">
-				<img src="/media/images/04_lectures/2HChronopourboostermacreativite.jpg">
+				<img src="media/images/06_lectures/2HChronopourboostermacreativite.jpg">
 				<p>Faites-vous partie de ceux qui sont épatés par le talent artistique, créatif, ambitieux de vos proches ou collègues en se demandant « Comment font-ils pour avoir des idées pareilles et si géniales » ? Et s’il était temps pour vous aussi d’être créatif ?2h Chrono pour booster ma créativité est le petit livre pratique pour révéler votre talent caché (si si vous en avez un, rassurez-vous) et vous donner les moyens de montrer toute votre inventivité !Conçu pour être lu et applicable rapidement, grâce aux nombreux infographies et exercices, il est nourri d'exemples, conseils et témoignages.</p>
 			</div>
 			<div id="slide_2">	
-				<img src="/media/images/04_lectures/Lavieestuncercle.jpg">
+				<img src="media/images/06_lectures/Lavieestuncercle.jpg">
 				<p>« Le cercle de vie est un panneau indicateur, une boussole intérieure. Non pas pour nous envoyer vers le nord ou vers le sud, mais vers le centre, vers l'essence, l'endroit le plus précieux où tout converge. Le plus bel endroit où l'on puisse être. » Qu'est-ce qui motive réellement nos choix et nos actions ? Est-ce uniquement notre bien-être personnel et le profit que l'on peut en tirer ? Ou nos motivations sont-elles plus compliquées, mêlant nos valeurs, nos idéaux, nos rapports aux autres, notre besoin de créer des relations humaines profondes ? Dans La vie est un cercle, Inez van Oord nous raconte ses propres leçons de vie sous la forme d'un voyage à travers le cercle : de la naissance d'une idée à la création des magazines Seasons et Happinez, des succès aux échecs, mettant en lumière la possibilité incessante de se réinventer, en repartant à zéro. Suivez le chemin de votre boussole intérieure dans le cercle de votre vie pour agir et lâcher prise.</p>
 			</div>
 			<div id="slide_3">	
-				<img src="media/images/04_lectures/DesRobotsetdesHommes.jpg">
+				<img src="media/images/06_lectures/DesRobotsetdesHommes.jpg">
 				<p>En imaginant des solutions pragmatiques combinant avancées technologiques et réflexions philosophiques, "Des robots et des hommes" a pour but d'expliquer à partir des mythes et fantasmes qui l'entourent, l'intelligence artificielle des robots et de préparer demain en proposant que ces futurs compagnons empathiques suivent des commandements éthiques. Laurence Devillers illustre son propos à l'aide de récits de fiction qui se déroulent dans un avenir proche, montrant l'impact sociétal que ces objets pas comme les autres auront sur nos sociétés. Que souhaitons-nous faire de ces machines artificiellement intelligentes et affectives dans notre société ? Comment vont-elles nous transformer ? Les robots nous promettent-ils le meilleur ou le pire des mondes ?</p>
 			</div>
 				
 		</div>
-		<div id="favs" class="container">
+		<div id="favs" class="container-fluid">
 			<div id="slate-favs">
 			<!-- 3 tailles différentes: little, medium , big .  / type de slate : image => slate-img, vidéo => slate-video, tweet => slate-twitter, article => slate-article, page web => slate-website-->
 				<div id="slate-favs-1" class="slate-little slate-img"> 
-					<img src="media/images/05_favoris/stackoverflow-logo.png">
-				</div>
-				<div id="slate-favs-2" class="slate-medium slate-video">
-					<a href="">
-						<img src="media/images/05_favoris/jeep_hacked.png">
+					<a href="https://stackoverflow.com/">
+						<img src="media/images/05_favoris/stackoverflowlogo.png">
 					</a>
 				</div>
-				<div id="slate-favs-1" class="slate-big slate-img"> 
-					<img src="media/images/05_favoris/a_jacquard.jpg">
+				<div id="slate-favs-2" class="slate-medium slate-video">
+					<a href="https://video.wired.com/watch/hackers-wireless-jeep-attack-stranded-me-on-a-highway">
+						<img src="media/images/05_favoris/jeephacked.png">
+					</a>
+				</div>
+				<div id="slate-favs-1" class="slate-big slate-img">
+					<a href="https://bibliobs.nouvelobs.com/essais/20130912.OBS6824/albert-jacquard-qu-est-ce-que-cela-veut-dire-etre-intelligent.html">
+						<img src="media/images/05_favoris/ajacquard.jpg">
+					</a> 
 				</div>
 			</div>
 		</div>

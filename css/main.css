@@ -1,21 +1,106 @@
-
-
+*, *:before, *:after{
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+*{
+	font-size: 18px;
+}
+h1{
+	font-size: 1.5em;
+	margin-bottom: 25px;
+	padding-top: 25px;
+}
+h2{
+	font-size: 1.2em;
+}
+h3{
+	
+}
+/* GENERAL */
 /*header*/
 
 /*nav*/
+.navbar{
+	background-color:#12294d;
+}
+.nav-item a{
+	color: white;
+	text-transform: uppercase;
+}
 /*me*/
 #me{
-	background-color: darkred;
+	background-color: white;
+	padding-top: 100px;
+	padding-bottom: 100px;
+	display: flex;
+}
+.docolumn_1{
+	display: flex;
+}
+.certifs, .reseaux{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left: 40px;
+}
+.certifs a{
+	color: orange;
+}
+.certifs a:hover{
+	color: orange;
+}
+#profil_img{
+	margin: 0 50px 20px 60px;
+}
+#me_about{
+	flex: 1;
+}
+#me h2{
+	margin-bottom: 20px;
+}
+.reseaux{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 100px;
+}
+.reseaux a{
+	color: #12294d;
+	font-size: 7x;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+.reseaux a:hover{
+	color: #12294d;
 }
 /*skills*/
 #skills{
-	background-color: red;
+	background-color: white;
+}
+#skills .row{
+	display: flex;
+	justify-content: space-around;
+}
+#skills h3{
+	text-align: center;
+}
+#skills .col-md-3{
+	margin-bottom: 10px;
 }
 /*xp*/
 #xp{
 	background-color: orange;
 }
 /*portfolio*/
-#
+#portfolio{
+	background-color: yellow;
+}
 /*reading*/
+#reading{
+	background-color: cyan;
+}
 /*favs*/
+#favs{
+	background-color: blueviolet;
+}
