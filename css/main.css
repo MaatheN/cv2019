@@ -17,6 +17,12 @@ h2{
 h3{
 	
 }
+.blue_divider{
+    width: 250px;
+    height: 4px;
+    background: #12294d;
+    margin: 0 auto;
+}
 /* GENERAL */
 /*header*/
 
@@ -77,6 +83,7 @@ h3{
 /*skills*/
 #skills{
 	background-color: white;
+	margin: 25px 0;
 }
 #skills .row{
 	display: flex;
@@ -91,16 +98,52 @@ h3{
 /*xp*/
 #xp{
 	background-color: orange;
+	margin: 25px 0;
 }
 /*portfolio*/
 #portfolio{
-	background-color: yellow;
+	background-color: white;
+	margin: 25px 0;
+}
+.thumbnail{
+	display: flex;
+	justify-content: center;
+}
+#portfolio .thumbnail img{
+    width: auto;
+    height: 255px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+}
+#portfolio .thumbnail img:hover{
+    filter: none;
+    -webkit-filter: none;
+}
+.legende{
+    text-align: center;
+    color: #12294d;
+    font-size: 1.3em;
 }
 /*reading*/
 #reading{
 	background-color: cyan;
+	margin: 25px 0;
 }
 /*favs*/
 #favs{
-	background-color: blueviolet;
+	background-color: white;
+	margin: 25px 0;
+}
+#slate-favs{
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+/*footer*/
+footer{
+	background-color: #12294d;
+	color: white;
+}
+footer a{
+	text-transform: none;
 }
