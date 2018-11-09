@@ -97,7 +97,7 @@ h3{
 }
 /*xp*/
 #xp{
-	background-color: orange;
+	background-color: white;
 	margin: 25px 0;
 }
 /*portfolio*/
@@ -126,8 +126,53 @@ h3{
 }
 /*reading*/
 #reading{
-	background-color: cyan;
+	background-color: white;
 	margin: 25px 0;
+}
+.carousel-control-prev-icon:after{
+	content: '<';
+	font-size: 55px;
+	color: #12294d;
+}
+.carousel-control-next-icon:after{
+	content: '>';
+	font-size: 55px;
+	color: #12294d;
+}
+.carousel-item{
+/*	color: #12294d;*/
+}
+.carousel-item h3, .carousel-item h4{
+	text-align: center;
+}
+.carousel-item h3{
+	font-style: italic;
+	color: #12294d;
+}
+.carousel-item h4{
+	text-shadow: 2px 2px 2px grey;
+}
+.slide{
+	display: flex;
+	align-items: center;
+}
+.slide p{
+	float: right;
+	padding: 0 115px 0 45px;
+/*	text-align: justify;*/
+}
+.slide img{
+	padding: 0 0 0 150px;
+}
+.stars{
+	margin-bottom: 5px;
+	color: #12294d;
+}
+#resume{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 /*favs*/
 #favs{
