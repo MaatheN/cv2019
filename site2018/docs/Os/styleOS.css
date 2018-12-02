@@ -1,0 +1,65 @@
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #111;    
+}
+
+/* HEADER */ 
+header{
+    height: 120px;
+}
+header h1{ 
+    float: left;
+    margin-top: 10px;
+}
+header nav{
+    height: 55px;
+/*    float: right;*/
+/*    margin-top: 10px;*/
+}
+
+header nav ul li{ 
+    display: inline-block;
+}
+header nav ul li a{
+    text-transform: uppercase;
+    color: #eee;
+}
+.menu{
+    width: 1050px;
+    margin: 0 auto;
+    padding: 0 10px;
+    background-color: #7F1E17;
+    color: #eee;
+}
+.titrepp{
+}
+/* body */ 
+div{
+    list-style: none;    
+}
+.accueil{
+    background-color: #619577;
+    border-radius: 20px;
+}
+.rejoindre{
+    background-color: #619577;
+    border-radius: 20px;
+}
+.ccm{
+    background-color: #619577;
+    border-radius: 20px;
+}
+.appmobile{
+    background-color: #619577;
+    border-radius: 20px;
+}
+.forum{
+    background-color: #619577;
+    border-radius: 20px;
+}
+
+/* Footer */

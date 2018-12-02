@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    </head>
+    <body data-spy="scroll" data-target=".navbar" data-offset="4">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#monmenu">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="#" class="navbar-brand">OUI'Seine!</a>
+                </div>
+                <div class="collapse navbar-collapse" id="monmenu">
+                    <ul class="nav navbar-nav">
+                        <li><a href="#accueil">Accueil</a></li>
+                        <li><a href="#actu">Actu</a></li>
+                        <li><a href="#ou">Oui'Carte</a></li>
+                        <li><a href="#agenda">Agenda</a></li>
+                        <li><a href="#part">Partenaires</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span>  Login</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+        <div class="dropdown">
+            <button type="button" class="btn btn-success btn-lg dropdown-toggle" data-toggle="dropdown">Boissons</button>
+            <ul class="dropdown-menu">
+                <li><a href="#">Coca</a></li>
+                <li><a href="#">Jus de fruit</a></li>
+                <li><a href="#">Eau</a></li>
+                <li><a href="#">Coktails</a></li>
+                <li><a href="#">Vodka</a></li>
+            </ul>
+            
+        </div>
+        <h2 id="accueil">Accueil</h2>
+        <h2 id="actu">Actu Culturelle locale</h2>
+        <div class="ment_act">
+<!--            <p>Une nouvelle date pour Le menteur!<br>Rejoingez OuiSeine pour participer à la master Class!<img src="Le-menteur-web-DR-1200x520.jpg"></p>-->
+            <div id="moncaroussel" class="carousel slide" data-ride="carousel" style="max-width: 800px;">
+                <ol class="carousel-indicators">
+                    <li data-target="#moncaroussel" data-slide-to="0"></li>
+                    <li data-target="#moncaroussel" data-slide-to="1"></li>
+                    <li data-target="#moncaroussel" data-slide-to="2"></li>
+                    <li data-target="#moncaroussel" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <img src="Le-menteur-web-DR-1200x520.jpg">
+                        <div class="carousel-caption"><h3>Menteur</h3><p>Rejoignez OuiSeine pour assister gratuitement à l'échange après la pièce.</p></div>
+                    </div>
+                    <div class="item">
+                    <img src="Disgr%C3%A2ce-%C2%A9Linda-Ntsukwana-Colesberg-2013.jpg">
+                    <div class="carousel-caption"><h3>Disgrâce</h3><p>-10% pour les membres!</p></div>
+                    </div>
+                    <div class="item">
+                        <img src="WARM-4-Photo-Sophie-Colleu.jpg">
+                        <div class="carousel-caption"><h3>WARM</h3><p>Reservez dès maintenant!</p></div>
+                    </div>
+                    <div class="item">
+                        <img src="Le-paradoxe-de-Georges-web%C2%A9-Christophe-Raynaud-De-Lage.jpg">
+                        <div class="carousel-caption"><h3>La paradoxe de Georges</h3></div>
+                    </div>
+                    
+                </div>
+                <a href="#moncaroussel" class="left carousel-control" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                <a href="#moncaroussel" class="right carousel-control" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+            </div>
+        </div>
+        <h2 id="ou">La OuiCarte</h2>
+        <h2 id="agenda">L'agenda</h2>
+        <h2 id="part">Nos partenaires</h2>
+    </body>
+</html>
