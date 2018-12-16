@@ -1,556 +1,151 @@
-<!doctype HTML>
-<html lang="fr">
-	<head>
-<!--	CSS -->
-		<link rel="stylesheet" href="css/stylefonte.css" type="text/css" media="all" id="style">
-		<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
-		<link rel="stylesheet" href="css/portfolio.css" type="text/css">
-		<link rel="stylesheet" href="css/timeline_b4.css" type="text/css">
-<!--		JS-->
-	
-<!--BOOTSTrap	-->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<!--	icones-->
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-<!--	timeline-->
-	<link rel="stylesheet" href="css/style_timeline.css" type="text/css">
-	<!--portfolio (jquery,js)-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-	<script src="/js/portfolio.js"></script>
-		<meta charset="utf-8">
-		<title>Mathieu Neveu CV</title>
-		<style type="text/css">
-        
-#timeline {
-  list-style: none;
-  position: relative;
-}
-#timeline:before {
-  top: 0;
-  bottom: 0;
-  position: absolute;
-  content: " ";
-  width: 2px;
-  background-color: #4997cd;
-  left: 50%;
-  margin-left: -1.5px;
-}
-#timeline .clearFix {
-  clear: both;			
-  height: 0;
-}
-#timeline .timeline-badge {
-  color: #fff;
-  width: 50px;
-  height: 50px;
-  font-size: 1.2em;
-  text-align: center;
-  position: absolute;
-  top: 20px;
-  left: 50%;
-  margin-left: -25px;
-  background-color: #4997cd;
-  z-index: 100;
-  border-top-right-radius: 50%;
-  border-top-left-radius: 50%;
-  border-bottom-right-radius: 50%;
-  border-bottom-left-radius: 50%;
-}
-#timeline .timeline-badge span.timeline-balloon-date-day {
-  font-size: 1.4em;
-}
-#timeline .timeline-badge span.timeline-balloon-date-month {
-  font-size: .7em;
-  position: relative;
-  top: -10px;
-}
-#timeline .timeline-badge.timeline-filter-movement {
-  background-color: #ffffff;
-  font-size: 1.7em;
-  height: 35px;
-  margin-left: -18px;
-  width: 35px;
-  top: 40px;
-}
-#timeline .timeline-badge.timeline-filter-movement a span {
-  color: #4997cd;
-  font-size: 1.3em;
-  top: -1px;
-}
-#timeline .timeline-badge.timeline-future-movement {
-  background-color: #ffffff;
-  height: 35px;
-  width: 35px;
-  font-size: 1.7em;
-  top: -16px;
-  margin-left: -18px;
-}
-#timeline .timeline-badge.timeline-future-movement a span {
-  color: #4997cd;
-  font-size: .9em;
-  top: 2px;
-  left: 1px;
-}
-#timeline .timeline-movement {
-  border-bottom: dashed 1px #4997cd;
-  position: relative;
-}
-#timeline .timeline-movement.timeline-movement-top {
-  height: 60px;
-}
-#timeline .timeline-movement .timeline-item {
-  padding: 20px 0;
-}
-#timeline .timeline-movement .timeline-item .timeline-panel {
-  border: 1px solid #d4d4d4;
-  border-radius: 3px;
-  background-color: #FFFFFF;
-  color: #666;
-  padding: 10px;
-  position: relative;
-  -webkit-box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-}
-#timeline .timeline-movement .timeline-item .timeline-panel .timeline-panel-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul {
-  text-align: right;
-}
-#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul li {
-  color: #666;
-}
-#timeline .timeline-movement .timeline-item .timeline-panel.credits .timeline-panel-ul li span.importo {
-  color: #468c1f;
-  font-size: 1.3em;
-}
-#timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul {
-  text-align: left;
-}
-#timeline .timeline-movement .timeline-item .timeline-panel.debits .timeline-panel-ul span.importo {
-  color: #e2001a;
-  font-size: 1.3em;
-}
-    </style>
-	</head>
-	<body>
-		<header>
-			<nav>
-				<ul class="navbar fixed-top justify-content-center">
-		  			<li class="nav-item">
-						<a class="nav-link active" href="#me">moi</a>
-		  			</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#skills">compétences</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#xp">expériences</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#portfolio">portfolio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#reading">lectures</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#favs">favoris</a>
-					</li>
-				</ul>
-			</nav>
-		</header>
-		<div id="me" class="container-fluid"> <!-- 3 divs: les deux première alignées, la dernière en colonne avec les deux autres -->
-			<div class="docolumn_1">
-				<div id="profil_img">
-					<img src="media/images/01_moi/1.jpg" class="rounded" alt="Photo de profil" title="Photo de moi">
-				</div>
-				<div id="me_about">
-					<h1>Mathieu Neveu</h1>
-					<h2>Développeur Informatique en Alternance</h2>
-					<p>étudiant à CESI Rouen, formation 'Développeur informatique'.</p>
-				</div>
-			</div>
-			<div class="certifs">
-				<a href="media/pdf/certificat_mathieu-neveu_apprenez-a-creer-votre-site-web-avec-html5-et-css3.pdf">
-					<span class="fas fa-graduation-cap"></span>
-				</a>
-				<a href="media/pdf/certificat_mathieu-neveu_le-machine-learning-est-il-l-avenir-de-l-homme.pdf">
-					<span class="fas fa-graduation-cap"></span>
-				</a>
-			</div>
-			<div class="reseaux">
-				<a href="https://www.linkedin.com/in/mathieu-neveu/">
-					<i class="fab fa-linkedin-in"></i>
-				</a>
-				<a href="https://github.com/MaatheN">
-					<i class="fab fa-github"></i>
-				</a>
-			</div>
-		</div>
-		<div class="blue_divider"></div>
-		<div id="skills" class="container-fluid">
-			<div class="row"> <!-- 148 * 160 -->
-				<div>
-					<h3>Langages</h3>
-					<div class="col-md-3">
-						<img src="media\images\02_camemberts\c_actuelles_petit.png">
-					</div>
-					<div class="col-md-3">
-						<img src="media\images\02_camemberts\c_objeectif_petit.png">
-					</div>
-				</div>
-				<div>
-					<h3>IDE</h3>
-					<div class="col-md-3">
-						<img src="media\images\02_camemberts\c_actuelles_petit.png">
-					</div>
-					<div class="col-md-3">
-						<img src="media\images\02_camemberts\c_objeectif_petit.png">
-					</div>
-				</div>
-				<div>
-					<h3>Outils de travail</h3>
-					<div class="col-md-3">
-						<img src="media\images\02_camemberts\c_actuelles_petit.png">
-					</div>
-					<div class="col-md-3">
-						<img src="media\images\02_camemberts\c_objeectif_petit.png">
-					</div>
-				</div>
-				<div>
-					<h3>OS</h3>
-					<div class="col-md-3">
-						<img src="media\images\02_camemberts\c_actuelles_petit.png">
-					</div>
-					<div class="col-md-3">
-						<img src="media\images\02_camemberts\c_objeectif_petit.png">
-					</div>
-				</div>
-				<div>
-					<h3>Sécurité Info</h3>
-					<div class="col-md-3">
-						<img src="media\images\02_camemberts\c_actuelles_petit.png">
-					</div>
-					<div class="col-md-3">
-						<img src="media\images\02_camemberts\c_objeectif_petit.png">
-					</div>
-				</div>
-			</div>
-		</div>
-		<div id="xp">
-		<div class="blue_divider"></div>
-			
-			<div class="container">
-    <div class="page-header">
-		<a href="timeline.html" target="_blank"><h1>Timeline</h1></a>
-	</div>
-	<div id="timeline"><div class="row timeline-movement timeline-movement-top">
-    <div class="timeline-badge timeline-future-movement">
-        <a href="#">
-            <span class="glyphicon glyphicon-plus"></span>
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- CSS directory -->
+  <link rel="stylesheet" href="css/main.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+<body>
+<div id="width600prct">
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">M N</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">moi <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">compétences</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">expériences</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">lectures</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">favoris</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div id="me" class="width100prct">
+	  <img class="rounded-circle" id="profil_img" src="media/images/01_moi/pp2019.png">
+	  <h2>Mathieu Neveu</h2>
+	  <h1>développeur informatique en alternance</h1>
+	  <h3>étudiant à CESI Rouen | Stage ou Alternance</h3>
+  </div>
+  <div id="skills" class="width100prct"></div>
+  <div id="xp" class="width100prct"></div>
+  <div id="portfolio" class="width100prct"></div>
+  <div id="reading" class="width100prct container-fluid">
+    <div id="carouselReadingIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselReadingIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselReadingIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselReadingIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselReadingIndicators" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active" id="emyth">
+          <h3>E-Myth Le mythe de l'entrepreneur revisité</h3>
+          <h4>Michael E. GERBERT, «ALISIO» 2017</h4>
+          <div id="slide_0" class="slide">
+            <img src="media/images/06_lectures/resized/e_MythLemythedelentrepreneurrevisite.jpg">
+            <div id="resume">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>Mythe de l'entrepreneur, n. : 1. Mythe selon lequel la plupart des personnes qui créent une petite entreprise sont des entrepreneurs. 2. Présupposé néfaste selon lequel une personne maîtrisant bien le travail technique d'une entreprise est capable de diriger une entreprise réalisant ce travail technique.
+                Qu'est-ce qui fait le succès d'une entreprise, qu'est-ce qui la voue à l'échec ? Classique parmi les classiques, cet ouvrage au succès international phénoménal déboulonne les mythes qui entourent la création d'entreprise et vous donne des solutions concrètes pour assurer le succès de la vôtre. Vous apprendrez notamment à :
+                déjouer la fatalité de l'échec grâce à une répartition rigoureuse des fonctions clés ;
+                tirer parti des principes de la franchise pour pérenniser et faire grandir votre entreprise ;
+                travailler sur votre entreprise et non pas dans votre entreprise pour retrouver une vie épanouissante et continuer à réaliser vos rêves.
+                Un ouvrage mythique qui a fait la renommée mondiale de son auteur, une bible pour tous les entrepreneurs et pour tous ceux qui rêvent de le devenir !
+                « Michael Gerber aime exhorter les gens à développer de puissantes visions concernant leur entreprise. » Fortune
+                « Les idées brillantes de Michael Gerber ont permis à des milliers d'entrepreneurs de reprendre le contrôle de leur entreprise » Success Magazine</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" id="booster_crea">
+          <h3>2H Chrono pour booster ma créativité</h3>
+          <h4>Alexis BOTAYA, «DUNOD» 2017</h4>
+          <div id="slide_1"  class="slide">
+            <img src="media/images/06_lectures/resized/2H_chronopourboostermacreativite.jpg">
+            <div id="resume">
+              <p>Faites-vous partie de ceux qui sont épatés par le talent artistique, créatif, ambitieux de vos proches ou collègues en se demandant « Comment font-ils pour avoir des idées pareilles et si géniales » ? Et s’il était temps pour vous aussi d’être créatif ?2h Chrono pour booster ma créativité est le petit livre pratique pour révéler votre talent caché (si si vous en avez un, rassurez-vous) et vous donner les moyens de montrer toute votre inventivité !Conçu pour être lu et applicable rapidement, grâce aux nombreux infographies et exercices, il est nourri d'exemples, conseils et témoignages.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" id="vie_cercle">
+          <h3>La vie est un cercle</h3>
+          <h4>Inez VAN OORD, «Guy Trédaniel éditeur» 2017</h4>
+          <div id="slide_2"  class="slide">
+            <img src="media/images/06_lectures/resized/Lavieestuncercle.jpg">
+            <div id="resume">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <p>« Le cercle de vie est un panneau indicateur, une boussole intérieure. Non pas pour nous envoyer vers le nord ou vers le sud, mais vers le centre, vers l'essence, l'endroit le plus précieux où tout converge. Le plus bel endroit où l'on puisse être. » Qu'est-ce qui motive réellement nos choix et nos actions ? Est-ce uniquement notre bien-être personnel et le profit que l'on peut en tirer ? Ou nos motivations sont-elles plus compliquées, mêlant nos valeurs, nos idéaux, nos rapports aux autres, notre besoin de créer des relations humaines profondes ? Dans La vie est un cercle, Inez van Oord nous raconte ses propres leçons de vie sous la forme d'un voyage à travers le cercle : de la naissance d'une idée à la création des magazines Seasons et Happinez, des succès aux échecs, mettant en lumière la possibilité incessante de se réinventer, en repartant à zéro. Suivez le chemin de votre boussole intérieure dans le cercle de votre vie pour agir et lâcher prise.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item" id="drobots_dhommes">
+          <h3>Des Robots et des Hommes</h3>
+          <h4>Laurence DEVILLERS, «PLON» 2017</h4>
+          <div id="slide_3" class="slide">
+            <img src="media/images/06_lectures/resized/_desRobotsetdesHommes.jpg">
+            <div id="resume">
+              <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <p>En imaginant des solutions pragmatiques combinant avancées technologiques et réflexions philosophiques, "Des robots et des hommes" a pour but d'expliquer à partir des mythes et fantasmes qui l'entourent, l'intelligence artificielle des robots et de préparer demain en proposant que ces futurs compagnons empathiques suivent des commandements éthiques. Laurence Devillers illustre son propos à l'aide de récits de fiction qui se déroulent dans un avenir proche, montrant l'impact sociétal que ces objets pas comme les autres auront sur nos sociétés. Que souhaitons-nous faire de ces machines artificiellement intelligentes et affectives dans notre société ? Comment vont-elles nous transformer ? Les robots nous promettent-ils le meilleur ou le pire des mondes ?</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselReadingIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
         </a>
-    </div>
-    <div class="timeline-badge timeline-filter-movement">
-        <a href="#">
-            <span class="glyphicon glyphicon-time"></span>
+        <a class="carousel-control-next" href="#carouselReadingIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
         </a>
+      </div>
     </div>
-
+  </div>
+  <div id="favs" class="width100prct"></div>
 </div>
-<div class="row timeline-movement">
-
-    <div class="timeline-badge">
-        <span class="timeline-balloon-date-day">27</span>
-        <span class="timeline-balloon-date-month">SEP</span>
-    </div>
-
-
-    <div class="col-sm-6  timeline-item">
-        <div class="row">
-            <div class="col-sm-11">
-                <div class="timeline-panel credits">
-                    <ul class="timeline-panel-ul">
-                        <li><span class="importo">CESI Rouen</span></li>
-                        <li><span class="causale">étudiant Developpeur Informatique</span> </li>
-                        <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 27/09/2018</small></p> </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="col-sm-6  timeline-item">
-        <div class="row">
-            <div class="col-sm-offset-1 col-sm-11">
-                <div class="timeline-panel debits">
-                    <ul class="timeline-panel-ul">
-                        <li><span class="importo">Formule Crêpes</span></li>
-                        <li><span class="causale">Préparation de crêpes sur place dans des évènements de type mariage, anniversaire,..</span> </li>
-                        <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 01/04/2018</small></p> </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-<!--due -->
-
-<div class="row timeline-movement">
-
-
-    <div class="timeline-badge">
-        <span class="timeline-balloon-date-day">30</span>
-        <span class="timeline-balloon-date-month">MAR</span>
-    </div>
-
-    <div class="col-sm-offset-6 col-sm-6  timeline-item">
-        <div class="row">
-            <div class="col-sm-offset-1 col-sm-11">
-                <div class="timeline-panel debits">
-                    <ul class="timeline-panel-ul">
-                        <li><span class="importo">EHPAD Maurice Collet</span></li>
-                        <li><span class="causale">Création et animation d'un atelier jeux-vidéos. Gestion d'un journal interne. Distribution journalière du courrier. Animation d'ateliers</span> </li>
-                        <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 03/07/2017</small></p> </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="col-sm-6  timeline-item">
-        <div class="row">
-            <div class="col-sm-11">
-                <div class="timeline-panel credits">
-                    <ul class="timeline-panel-ul">
-                        <li><span class="importo">OpenClassroom</span></li>
-                        <li><span class="causale">'Apprenez à créer votre site web avec HTML5 et CSS3' et 'Apprenez à programmer en C!'</span> </li>
-                        <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 03/2018</small></p> </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-</div>
-<div class="row timeline-movement">
-
-
-    <div class="timeline-badge">
-        <span class="timeline-balloon-date-day">10</span>
-        <span class="timeline-balloon-date-month">APR</span>
-    </div>
-
-    <div class="col-sm-offset-6 col-sm-6  timeline-item">
-        <div class="row">
-            <div class="col-sm-offset-1 col-sm-11">
-                <div class="timeline-panel debits">
-                    <ul class="timeline-panel-ul">
-                        <li><span class="importo">Imprimerie</span></li>
-                        <li><span class="causale">Aide Papetière en job étudiant</span> </li>
-                        <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 01/06/2017</small></p> </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-    <div class="col-sm-6  timeline-item">
-        <div class="row">
-            <div class="col-sm-11">
-                <div class="timeline-panel credits">
-                    <ul class="timeline-panel-ul">
-                        <li><span class="importo">Udemy</span></li>
-                        <li><span class="causale">'Formation Complète Développeur Web'</span> </li>
-                        <li><p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 09/2017</small></p> </li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </div>
-
-
-</div>
-</div>
-</div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-		</div>
-		<div class="blue_divider"></div>
-
-		<div id="portfolio" class="container-fluid">
-			<section id="slate-portfolio"> <!-- ardoises -->
-				<div class="row">
-					<div class="col-sm-4">
-						<a href="http://formule-crepes.com" target="_blank" class="thumbnail">
-							<img src="media/images/04_projets/fclogo.png">
-						</a>
-					 <!-- Besoin d'une seule image-->
-						<p class="legende">Site Web Formule-Crêpes</p>
-					</div>
-					<div class="col-sm-4">
-						<a href="http://mathieu-neveu.fr" target="_blank" class="thumbnail">
-							<img src="media/images/04_projets/cv2018.PNG">
-						</a>
-					 <!-- Besoin d'une seule image-->
-						<p class="legende">Site CV 2018</p>
-					</div>
-					<div class="col-sm-4">
-						<a href="http://mathieu-neveu.com" target="_blank" class="thumbnail">
-							<img src="media/images/04_projets/1.png">
-						</a>
-					 <!-- Besoin d'une seule image-->
-						<p class="legende">Site CV 2019</p>
-					</div>
-				</div>
-			</section>
-		</div>
-		<div class="blue_divider"></div>
-		<div id="reading" class="container-fluid">
-			<div id="carouselReadingIndicators" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#carouselReadingIndicators" data-slide-to="0" class="active"></li>
-					<li data-target="#carouselReadingIndicators" data-slide-to="1"></li>
-					<li data-target="#carouselReadingIndicators" data-slide-to="2"></li>
-					<li data-target="#carouselReadingIndicators" data-slide-to="3"></li>
-				</ol>
-				<div class="carousel-inner">
-					<div class="carousel-item active" id="emyth">
-						<h3>E-Myth Le mythe de l'entrepreneur revisité</h3>
-						<h4>Michael E. GERBERT, «ALISIO» 2017</h4>
-						<div id="slide_0" class="slide">	
-							<img src="media/images/06_lectures/resized/e_MythLemythedelentrepreneurrevisite.jpg">
-							<div id="resume">
-								<div class="stars">
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="far fa-star"></i>
-									<i class="far fa-star"></i>
-								</div>
-								<p>Mythe de l'entrepreneur, n. : 1. Mythe selon lequel la plupart des personnes qui créent une petite entreprise sont des entrepreneurs. 2. Présupposé néfaste selon lequel une personne maîtrisant bien le travail technique d'une entreprise est capable de diriger une entreprise réalisant ce travail technique.
-									Qu'est-ce qui fait le succès d'une entreprise, qu'est-ce qui la voue à l'échec ? Classique parmi les classiques, cet ouvrage au succès international phénoménal déboulonne les mythes qui entourent la création d'entreprise et vous donne des solutions concrètes pour assurer le succès de la vôtre. Vous apprendrez notamment à :
-							déjouer la fatalité de l'échec grâce à une répartition rigoureuse des fonctions clés ;
-							tirer parti des principes de la franchise pour pérenniser et faire grandir votre entreprise ;
-							travailler sur votre entreprise et non pas dans votre entreprise pour retrouver une vie épanouissante et continuer à réaliser vos rêves.
-							Un ouvrage mythique qui a fait la renommée mondiale de son auteur, une bible pour tous les entrepreneurs et pour tous ceux qui rêvent de le devenir !
-							« Michael Gerber aime exhorter les gens à développer de puissantes visions concernant leur entreprise. » Fortune
-							« Les idées brillantes de Michael Gerber ont permis à des milliers d'entrepreneurs de reprendre le contrôle de leur entreprise » Success Magazine</p>
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item" id="booster_crea">
-						<h3>2H Chrono pour booster ma créativité</h3>
-						<h4>Alexis BOTAYA, «DUNOD» 2017</h4>
-						<div id="slide_1"  class="slide">
-							<img src="media/images/06_lectures/resized/2H_chronopourboostermacreativite.jpg">
-							<div id="resume">
-<!--
-								<div class="stars">
-									<i class="far fa-star"></i>
-									<i class="far fa-star"></i>
-									<i class="far fa-star"></i>
-									<i class="far fa-star"></i>
-									<i class="far fa-star"></i>
-								</div>
--->
-								<p>Faites-vous partie de ceux qui sont épatés par le talent artistique, créatif, ambitieux de vos proches ou collègues en se demandant « Comment font-ils pour avoir des idées pareilles et si géniales » ? Et s’il était temps pour vous aussi d’être créatif ?2h Chrono pour booster ma créativité est le petit livre pratique pour révéler votre talent caché (si si vous en avez un, rassurez-vous) et vous donner les moyens de montrer toute votre inventivité !Conçu pour être lu et applicable rapidement, grâce aux nombreux infographies et exercices, il est nourri d'exemples, conseils et témoignages.</p>
-							</div>
-						</div>
-					</div>
-					<div class="carousel-item" id="vie_cercle">
-						<h3>La vie est un cercle</h3>
-						<h4>Inez VAN OORD, «Guy Trédaniel éditeur» 2017</h4>
-						<div id="slide_2"  class="slide">	
-							<img src="media/images/06_lectures/resized/Lavieestuncercle.jpg">
-							<div id="resume">
-								<div class="stars">
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="far fa-star"></i>
-									<i class="far fa-star"></i>
-								</div>
-								<p>« Le cercle de vie est un panneau indicateur, une boussole intérieure. Non pas pour nous envoyer vers le nord ou vers le sud, mais vers le centre, vers l'essence, l'endroit le plus précieux où tout converge. Le plus bel endroit où l'on puisse être. » Qu'est-ce qui motive réellement nos choix et nos actions ? Est-ce uniquement notre bien-être personnel et le profit que l'on peut en tirer ? Ou nos motivations sont-elles plus compliquées, mêlant nos valeurs, nos idéaux, nos rapports aux autres, notre besoin de créer des relations humaines profondes ? Dans La vie est un cercle, Inez van Oord nous raconte ses propres leçons de vie sous la forme d'un voyage à travers le cercle : de la naissance d'une idée à la création des magazines Seasons et Happinez, des succès aux échecs, mettant en lumière la possibilité incessante de se réinventer, en repartant à zéro. Suivez le chemin de votre boussole intérieure dans le cercle de votre vie pour agir et lâcher prise.</p>
-							</div>
-						</div>	
-					</div>
-					<div class="carousel-item" id="drobots_dhommes">
-						<h3>Des Robots et des Hommes</h3>
-						<h4>Laurence DEVILLERS, «PLON» 2017</h4>
-						<div id="slide_3" class="slide">
-							<img src="media/images/06_lectures/resized/_desRobotsetdesHommes.jpg">
-							<div id="resume">
-								<div class="stars">
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star"></i>
-									<i class="fas fa-star-half-alt"></i>
-								</div>
-								<p>En imaginant des solutions pragmatiques combinant avancées technologiques et réflexions philosophiques, "Des robots et des hommes" a pour but d'expliquer à partir des mythes et fantasmes qui l'entourent, l'intelligence artificielle des robots et de préparer demain en proposant que ces futurs compagnons empathiques suivent des commandements éthiques. Laurence Devillers illustre son propos à l'aide de récits de fiction qui se déroulent dans un avenir proche, montrant l'impact sociétal que ces objets pas comme les autres auront sur nos sociétés. Que souhaitons-nous faire de ces machines artificiellement intelligentes et affectives dans notre société ? Comment vont-elles nous transformer ? Les robots nous promettent-ils le meilleur ou le pire des mondes ?</p>
-							</div>
-						</div>	
-					</div>
-					<a class="carousel-control-prev" href="#carouselReadingIndicators" role="button" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="carousel-control-next" href="#carouselReadingIndicators" role="button" data-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
-				</div>	
-			</div>
-		</div>
-		<div class="blue_divider"></div>
-		<div id="favs" class="container-fluid">
-			<div id="slate-favs">
-			<!-- 3 tailles différentes: little, medium , big .  / type de slate : image => slate-img, vidéo => slate-video, tweet => slate-twitter, article => slate-article, page web => slate-website-->
-				<div id="slate-favs-1" class="slate-little slate-img"> 
-					<a href="https://stackoverflow.com/" target="_blank">
-						<img src="media/images/05_favoris/stackoverflowlogo.png">
-					</a>
-				</div>
-				<div id="slate-favs-2" class="slate-medium slate-video">
-					<a href="https://video.wired.com/watch/hackers-wireless-jeep-attack-stranded-me-on-a-highway" target="_blank">
-						<img src="media/images/05_favoris/jeephacked.png">
-					</a>
-				</div>
-				<div id="slate-favs-1" class="slate-big slate-img">
-					<a href="https://bibliobs.nouvelobs.com/essais/20130912.OBS6824/albert-jacquard-qu-est-ce-que-cela-veut-dire-etre-intelligent.html" target="_blank">
-						<img src="media/images/05_favoris/ajacquard.jpg">
-					</a> 
-				</div>
-			</div>
-		</div>
-		<footer>
-			<h5>© Mathieu Neveu 2019</h5>
-			<p>
-			<a href="#">Plan du site</a> | 
-			<a href="#">Politique de Confidientalité</a> | 
-			<a href="#">Conditions d'utilisation</a>
-			</p>
-		</footer>
-		<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-	</body>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
 </html>

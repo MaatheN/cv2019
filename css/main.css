@@ -6,6 +6,12 @@
 *{
 	font-size: 18px;
 }
+#width600prct{
+	height: 600vh !important;
+}
+.width100prct{
+  height: 100vh !important;
+}
 h1{
 	font-size: 1.5em;
 	margin-bottom: 25px;
@@ -36,7 +42,7 @@ h3{
 }
 /*me*/
 #me{
-	background-color: white;
+	background-color: darkred;
 	padding-top: 100px;
 	padding-bottom: 100px;
 	display: flex;
@@ -58,6 +64,8 @@ h3{
 }
 #profil_img{
 	margin: 0 50px 20px 60px;
+	height: 400px;
+	width: 315px;
 }
 #me_about{
 	flex: 1;
@@ -82,7 +90,7 @@ h3{
 }
 /*skills*/
 #skills{
-	background-color: white;
+	background-color: red;
 	margin: 25px 0;
 }
 #skills .row{
@@ -97,12 +105,12 @@ h3{
 }
 /*xp*/
 #xp{
-	background-color: white;
+	background-color: orange;
 	margin: 25px 0;
 }
 /*portfolio*/
 #portfolio{
-	background-color: white;
+	background-color: yellow;
 	margin: 25px 0;
 }
 .thumbnail{
@@ -126,18 +134,18 @@ h3{
 }
 /*reading*/
 #reading{
-	background-color: white;
+	background-color: deepskyblue;
 	margin: 25px 0;
 }
 .carousel-control-prev-icon:after{
-	content: '<';
+	/*content: '<';
 	font-size: 55px;
-	color: #12294d;
+	color: #12294d;*/
 }
 .carousel-control-next-icon:after{
-	content: '>';
+	/*content: '>';
 	font-size: 55px;
-	color: #12294d;
+	color: #12294d;*/
 }
 .carousel-item{
 /*	color: #12294d;*/
@@ -176,8 +184,12 @@ h3{
 }
 /*favs*/
 #favs{
-	background-color: white;
+	background-color: darkblue;
 	margin: 25px 0;
+  /*display:grid;
+  grid-template-columns: repeat(8,12.5%);
+  grid-template-rows: repeat(4,25%);
+  grid-gap: 10px; */
 }
 #slate-favs{
 	display: flex;
