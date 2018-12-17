@@ -5,6 +5,7 @@
 }
 body{
 	height: 500vh;
+	width: 100%;
 }
 *{
 	font-size: 18px;
@@ -31,12 +32,23 @@ p{
     background: #12294d;
     margin: 0 auto;
 }
+.section{
+	width: 100%;
+}
 /*me*/
 #me{
 	margin-top: 65px;
 }
+#me p{
+	margin-bottom: 7px;
+}
 #me .img{
 	text-align: center;
+}
+.fa-award{
+    font-size: 1.7em;
+    padding: 4px;
+    color: #fa7217;
 }
 .un{
 /*	background-color: pink;*/
